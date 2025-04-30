@@ -7,35 +7,36 @@ By simplifying system cleanup processes, MercuryPulse aims to boost overall syst
 
 MercuryPulse is specifically designed to extract the maximum possible performance from computers, making it an excellent tool for gamers, content creators, and power users who demand speed and efficiency.
 
-This project is currently under development and will be updated progressively.
-
+This project is currently under development and will be updated progressively.  
 Stay tuned for more updates!
 
 ---
 
 ## 📋 Planned Features
-- [] Clean temporary files
-- [] Empty the system's recycle bin
-- [] Analyze and report large files
-- [] Suggest memory optimization by identifying heavy processes
-- [] Generate cleanup reports (future enhancement)
-- [] Graphical Interface (future enhancement)
+
+- [x] Clean temporary files  
+- [ ] Empty the system's recycle bin  
+- [ ] Analyze and report large files  
+- [ ] Suggest memory optimization by identifying heavy processes  
+- [ ] Generate cleanup reports (future enhancement)  
+- [ ] Graphical Interface (future enhancement)  
 
 ---
 
 ## 🛠 Project Status
+
 **In Development.**  
-(Current phase: basic modules being built and tested.)
+(Current phase: temporary file cleaning module implemented and tested.)
 
 ---
 
-## 📝 Update History
+## 🕓 Update History
 
-| Date | Update Description |
-|:---|:---|
-| 2025-04-29 | Project initialized. Basic README created. |
+| Date       | Update Description                                      |
+|------------|----------------------------------------------------------|
+| 2025-04-29 | Project initialized. Basic README created.               |
+| 2025-04-30 | Added full support for cleaning temporary system files.  |
 
 ---
 
-## 📦 Project Structure (to be updated)
-
+## 📁 Project Structure (to be updated)
