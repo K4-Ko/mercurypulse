@@ -1,6 +1,7 @@
 from time import sleep
 import os
 from module_mercury import temp_cleaner
+from module_mercury import empty_bin
 
 def print_centered(text):
     terminal_width = os.get_terminal_size().columns
@@ -56,7 +57,16 @@ while True:
             options_menu()
             
         elif choice == "2":
-            print(f'{'Empty the recycle bin (2)':>58}')
+            empty_bin.empty_bin()
+            print(f'{'Emptying bin...':>56}')
+            sleep(2)
+            print(f'{'Bin is now empty!':>58}')
+            sleep(2)
+            clear_screen()
+            main_menu()
+            options_menu()
+
+
         elif choice == "3":
             print(f'{'Memory optimization (3)':>56}')
         elif choice == "4":
