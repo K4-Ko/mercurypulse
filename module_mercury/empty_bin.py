@@ -15,7 +15,7 @@ def empty_bin():
         recycle_bin_path = os.path.join('C:\\$Recycle.Bin', sid)
         
         try:
-                bin_temp = os.listdir(recycle_bin_path)
+            bin_temp = os.listdir(recycle_bin_path)
         except PermissionError:
             print(f"Permission denied: {recycle_bin_path}")
             with open('mercurypulse\\module_mercury\\temp_cleaner_log.txt','w',encoding = 'UTF-8') as log_file:
@@ -23,14 +23,14 @@ def empty_bin():
             continue
 
 
-    for file in bin_temp:
-        file_path = os.path.join(recycle_bin_path, file)
-        try:
-            if os.path.isdir(file_path):
-                shutil.rmtree(file_path)
-            else:
-                os.remove(file_path)
-        except PermissionError:
-            pass
-        except Exception as e:
-            print(f"Error deleting {file_path}: {e}")
+        for file in bin_temp:
+            file_path = os.path.join(recycle_bin_path, file)
+            try:
+                if os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+                else:
+                    os.remove(file_path)
+            except PermissionError:
+                pass
+            except Exception as e:
+                print(f"Error deleting {file_path}: {e}")
