@@ -10,15 +10,17 @@ def empty_bin():
         if sid_temp.startswith('S-1-5-21'):
             sid_list.append(sid_temp)
 
-    try:
-        for sid in sid_list:
-            recycle_bin_path = os.path.join('C:\\$Recycle.Bin', sid)
-            bin_temp = os.listdir(recycle_bin_path)
-    except PermissionError:
-        print(f"Permission denied: {recycle_bin_path}")
-        with open('mercurypulse\\module_mercury\\temp_cleaner_log.txt','w',encoding = 'UTF-8') as log_file:
-                    log_file.write(f"Permission denied: {recycle_bin_path}")
-        pass
+    
+    for sid in sid_list:
+        recycle_bin_path = os.path.join('C:\\$Recycle.Bin', sid)
+        
+        try:
+                bin_temp = os.listdir(recycle_bin_path)
+        except PermissionError:
+            print(f"Permission denied: {recycle_bin_path}")
+            with open('mercurypulse\\module_mercury\\temp_cleaner_log.txt','w',encoding = 'UTF-8') as log_file:
+                        log_file.write(f"Permission denied: {recycle_bin_path}")
+            continue
 
 
     for file in bin_temp:
