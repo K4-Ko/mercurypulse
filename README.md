@@ -15,7 +15,7 @@ Stay tuned for more updates!
 ## 📋 Planned Features
 
 - [x] Clean temporary files  
-- [ ] Empty the system's recycle bin  
+- [x] Empty the system's recycle bin  
 - [ ] Analyze and report large files  
 - [ ] Suggest memory optimization by identifying heavy processes  
 - [ ] Generate cleanup reports (future enhancement)  
@@ -26,17 +26,19 @@ Stay tuned for more updates!
 ## 🛠 Project Status
 
 **In Development.**  
-(Current phase: temporary file cleaning module implemented and tested.)
+(Current phase: recycle bin cleanup module implemented and tested.)
 
 ---
 
 ## 🕓 Update History
 
-| Date       | Update Description                                      |
-|------------|----------------------------------------------------------|
-| 2025-04-29 | Project initialized. Basic README created.               |
-| 2025-04-30 | Added full support for cleaning temporary system files.  |
+| Date       | Update Description                                           |
+|------------|--------------------------------------------------------------|
+| 2025-04-29 | Project initialized. Basic README created.                   |
+| 2025-04-30 | Added full support for cleaning temporary system files.      |
+| 2025-05-01 | Implemented feature to empty the system's recycle bin.       |
 
 ---
 
 ## 📁 Project Structure (to be updated)
+
