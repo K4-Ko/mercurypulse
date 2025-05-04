@@ -26,8 +26,8 @@ def main_menu():
 
 def options_menu():
     menu_text = [
-        "Clean temporary files (1)",
-        "Empty the recycle bin (2)",
+        "Cleaner Engine (1)",
+        "FPS Boost Mode (2)",
         "Memory optimization (3)",
         "Exit (4)"
     ]
@@ -39,7 +39,6 @@ def options_menu():
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
 main_menu()
 options_menu()
 
@@ -48,24 +47,21 @@ while True:
         choice = input(f"{'Please select an option:':>58}")
         if choice == "1":
             temp_cleaner.download_delete()
+            empty_bin.empty_bin()
             print('Deleting temporary files...')
             sleep(2)
             print(f'{'Temporary files deleted successfully!':>58}')
             sleep(2)
-            clear_screen()
-            main_menu()
-            options_menu()
-            
-        elif choice == "2":
-            empty_bin.empty_bin()
-            print(f'{'Emptying bin...':>56}')
+            print(f'{'Emptying bin...':>58}')
             sleep(2)
             print(f'{'Bin is now empty!':>58}')
             sleep(2)
             clear_screen()
             main_menu()
             options_menu()
-
+            
+        elif choice == "2":
+            ...
 
         elif choice == "3":
             print(f'{'Memory optimization (3)':>56}')
